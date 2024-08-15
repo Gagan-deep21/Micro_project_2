@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Chela+One&family=Cormorant:wght@300&family=Dancing+Script&family=Dosis:wght@200&family=Edu+SA+Beginner&family=Montserrat:ital,wght@0,100;1,100&family=Poiret+One&family=Ysabeau+Infant:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logoo.jpg" alt="Nike Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="about_main">
+        <section class="about-us">
+            <h2>{{ heading_2 }}</h2>
+            <p>{{ paragraph_1 }}</p>
+            <p>{{ paragraph_2 }}</p>
+            <div class="about-gallery">
+                <img v-for="image in gallery_images" :src="image.src" :alt="image.alt" />
+            </div>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Learn more about our mission, values, and what drives us to be a leader in the industry.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: info@nike.com</p>
+                <p>Phone: +1 800 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nike. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/about.js"></script>
+</body>
+</html>

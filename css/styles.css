@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #0071e3;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    background-color: #004b87;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff7a00;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.cta-button:hover {
+    background-color: #ff9900;
+}
+
+/* Features section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+    border-top: 2px solid #0071e3;
+    border-bottom: 2px solid #0071e3;
+    border-bottom: none;
+    padding-bottom: 8%;
+}
+
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #0071e3;
+}
+
+.feature-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 10px;
+    vertical-align: top;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-item h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* About Us page */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.7em;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    color: #0071e3;
+}
+
+.about-us p {
+    padding: 5px 70px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #555;
+    font-family:"Dancing script";
+    text-align: center;
+}
+
+.about-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.about-gallery img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Us page */
+.contact-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f7f7f7;
+    margin-bottom: 5%;
+}
+
+.contact-us form{
+    border: 2px solid black;
+    padding:5%;
+}
+
+.contact-us h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #0071e3;
+}
+
+.contact-us p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #0071e3;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005bb5;
+}
+
+/* Footer styles */
+footer {
+    background-color:  #004b87;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-column h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.footer-column p {
+    font-size: 1em;
+    color: white;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 0.9em;
+}

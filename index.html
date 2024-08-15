@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike - Just Do It</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logoo.jpg" alt="Nike Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Nike - Just Do It</h1>
+        <p>Explore the latest collections of Nike shoes and experience unmatched comfort and style.</p>
+        <a href="about.html" class="cta-button">Learn More</a>
+    </section>
+
+    <main id="app">
+        <section class="features">
+            <h2>{{heading_2}}</h2>
+            <div class="feature-item">
+                <img :src="image_1" alt="Nike Shoes"/>
+                <h3>{{heading_3}}</h3>
+                <p>{{para}}</p>
+            </div>
+            <div class="feature-item">
+                <img :src="image_2" alt="Nike Performance">
+                <h3>{{heading_4}}</h3>
+                <p>{{para_2}}</p>
+            </div>
+            <div class="feature-item">
+                <img :src="image_3" alt="Nike Comfort">
+                <h3>{{heading_5}}</h3>
+                <p>{{para_3}}</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Learn more about our mission, values, and what drives us to be a leader in the industry.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: info@nike.com</p>
+                <p>Phone: +1 800 123 4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Nike. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
